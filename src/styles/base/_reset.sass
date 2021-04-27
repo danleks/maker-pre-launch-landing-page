@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap')
+@import 'normalize.css'
+
+\:root
+    --teal: #3EE9E5
+    --blue: #093F68
+    --grey: #777F98
+    --white: #ffffff
+    --black: #080C20
+    --red: #FF2965
+    --fontFamily: 'Manrope', sans-serif
+
+html
+    box-sizing: border-box
+    font-size: 62.5%
+
+body
+    font-size: 1.6rem
+    background-color: var(--black)
+
+.wrapper
+    --width: 87.2%
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 110rem
+    width: var(--width)
+    margin: 4rem auto 16.4rem
+    border: 1px solid red
+    @media(min-width: 768px)
+        --width: 89.8%
+
+*, *:before, *:after
+    box-sizing: inherit
+    padding: 0
+    margin: 0
+
+nav
+    width: 100%
+
+ul
+    list-style: none
