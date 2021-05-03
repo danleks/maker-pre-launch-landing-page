@@ -1,0 +1,71 @@
+.features
+    display: flex
+    flex-direction: column
+    gap: 5.6rem
+    @media(min-width: 768px)
+        gap: 4rem
+    @media(min-width: 1440px)
+        flex-direction: row
+.features__item
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    @media(min-width: 768px)
+        flex-direction: row
+        flex-wrap: wrap
+        gap: 5.5rem
+        &:nth-child(even)
+            margin-right: 5.8rem
+    @media(min-width: 1440px)
+        &:nth-child(even)
+            margin-right: 0
+            margin-top: 4.8rem
+.features__imgContainer
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 12rem
+    height: 12.4rem
+    border-radius: 4.5rem
+    background-color: var(--blue)
+    @media(min-width: 1440px)
+        width: 16rem
+        height: 16.4rem
+.features__img
+    height: auto
+    &--0
+        width: 6.6rem
+        @media(min-width: 1440px)
+            width: 10.6rem
+    &--1
+        width: 5.6rem
+        @media(min-width: 1440px)
+            width: 7.4rem
+    &--2
+        width: 6rem
+        @media(min-width: 1440px)
+            width: 8rem
+    &--3
+        width: 7.8rem
+        @media(min-width: 1440px)
+            width: 7.4rem
+.features__content
+    --mgt: 3.2rem
+    max-width: 34rem
+    margin-top: var(--mgt)
+    @media(min-width: 768px)
+        --mgt: 0
+.features__title
+    font-size: 1.8rem
+    font-weight: 800
+    color: var(--white)
+    text-align: center
+    @media(min-width: 768px)
+        text-align: left
+.features__desc
+    --mgt: 1.1rem
+    margin-top: var(--mgt)
+    text-align: center
+    @media(min-width: 768px)
+        text-align: left
