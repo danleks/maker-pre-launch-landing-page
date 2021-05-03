@@ -1,16 +1,23 @@
 import './styles/main.sass';
 import Logo from './components/Logo/Logo';
 import Hero from './components/Hero/Hero';
+import Features from './components/Features/Features';
+import Pricing from './components/Pricing/Pricing';
+import Subscription from './components/Subcription/Subcription';
 
 const App = new Reef('#app', {
     template: () => {
         return `
             <div class="wrapper">
-                <nav data-component="logo"></nav>
+                <div class="innerWrapper">
+                    <nav data-component="logo"></nav>
+                </div>
                 <main>
-                    <my-hero data-component="hero"></my-hero>
+                    <section data-component="hero"></section>
                     <div class="innerWrapper">
-                        <h2>other</h2>
+                        <section data-component="features"></section>
+                        <section data-component="pricing"></section>
+                        <section data-component="subscription"></section>
                     </div>
                 </main>
             </div>
@@ -19,5 +26,5 @@ const App = new Reef('#app', {
 });
 
 
-App.attach([Logo, Hero]);
+App.attach([Logo, Hero, Features, Pricing, Subscription]);
 export default App;
