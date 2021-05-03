@@ -12,4 +12,4 @@ Stack:
 - CSS (Sass)
 - NPM, Webpack
 
-[Click to see the project.](https://gifted-hermann-b55083.netlify.app/)
+[Click to see the project.](https://distracted-archimedes-a370bd.netlify.app)
