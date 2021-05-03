@@ -1,0 +1,20 @@
+.pricing__heading
+    display: flex
+    flex-direction: column
+    align-items: center
+.pricing__desc
+    margin-top: 2.7rem
+    text-align: center
+    max-width: 59rem
+.pricing__content
+    --mgt: 7.9rem
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 6.5rem
+    margin-top: var(--mgt)
+    @media(min-width: 1440px)
+        --mgt: 11.7rem
+        flex-direction: row
+        justify-content: center
+        gap: 3rem
