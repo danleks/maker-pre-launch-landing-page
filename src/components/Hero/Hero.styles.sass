@@ -1,11 +1,8 @@
 .hero
-    --mgt: 6.6rem
     --height: 100%
     position: relative
     height: var(--height)
-    margin-top: var(--mgt)
     @media(min-width: 768px)
-        --mgt: 7.7rem
         --height: 35.6rem
         display: flex
         justify-content: center
@@ -35,11 +32,12 @@
     align-items: center
     margin-top: 15.1%
     @media(min-width: 768px)
-        width: 45.7rem
+        width: 41rem
         margin-top: 0
+    @media(min-width: 1440px)
+        width: 60rem
 .hero__title
-    max-width: 40rem
-    padding: 0 3.7rem
+    padding: 0 4rem
     font-size: 3.2rem
     font-weight: 800
     line-height: 4rem
