@@ -61,13 +61,21 @@ html
 body
     font-size: 1.6rem
     background-color: var(--black)
+    background-image: url('../assets/bg-footer-squiggle.svg')
+    background-repeat: no-repeat
+    background-position: bottom
+    background-size: 100%
+    background-position: bottom 30rem center
+    @media(min-width: 768px)
+        background-position: bottom 10rem center
+    @media(min-width: 1440px)
+        background-position: bottom
 
 .wrapper
     display: flex
     flex-direction: column
     max-width: 144.4rem
     margin: 4rem auto 16.4rem
-    border: 1px solid red
     @media(min-width: 768px)
         margin: 4.8rem auto 10.5rem
 .innerWrapper
@@ -89,6 +97,21 @@ nav
 ul
     list-style: none
 
+section
+    display: flex
+    justify-content: center
+    align-items: center
+.error
+    position: absolute
+    top: -3.5rem
+    display: none
+    font-size: 1.2rem
+    font-weight: 500
+    line-height: 25px
+    color: var(--red)
+    transform: translateX(16px)
+    @media(min-width: 768px)
+        top: unset
 .highlight
     color: var(--teal)
 .text
@@ -96,3 +119,30 @@ ul
     font-weight: 500
     line-height: 2.5rem
     color: var(--grey)
+.sectionTitle
+    font-size: 2.4rem
+    font-weight: 800
+    line-height: 32.78px
+    text-align: center
+    color: var(--white)
+    @media(min-width: 1440px)
+        font-size: 3.2rem
+[data-component="hero"]
+    display: block
+    --mgt: 6.6rem
+    margin-top: var(--mgt)
+    @media(min-width: 768px)
+        --mgt: 7.7rem
+[data-component="features"]
+    --mgt: 14.4rem
+    margin-top: var(--mgt)
+    @media(min-width: 768px)
+        --mgt: 10.9rem
+    @media(min-width: 1440px)
+        --mgt: 20.2rem
+[data-component="pricing"]
+    --mgt: 14.4rem
+    margin-top: var(--mgt)
+[data-component="subscription"]
+    --mgt: 14.5rem
+    margin-top: var(--mgt)
