@@ -1,0 +1,32 @@
+.subscription
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    @media(min-width: 768px)
+        width: 47.6rem
+        flex-wrap: wrap
+.subscription__form
+    --mgt: 3.1rem
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 2.4rem
+    width: 100%
+    margin-top: var(--mgt)
+    @media(min-width: 768px)
+        --mgt: 2.9rem
+        flex-direction: row
+        gap: 1.6rem
+    @media(min-width: 1440px)
+        --mgt: 4.2rem
+.subscription__input, .subscription__button
+    width: 100%
+    max-width: 32rem
+.subscription__input
+    @media(min-width: 768px)
+        flex: 1 43rem
+.subscription__button
+    @media(min-width: 768px)
+        flex: 1 14rem
