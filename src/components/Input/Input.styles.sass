@@ -1,0 +1,17 @@
+label
+    position: relative
+.input
+    width: 100%
+    height: 4.8rem
+    border: none
+    border-radius: 2.4rem
+    padding-left: 1.8rem
+    color: var(--grey)
+    font-size: 1.5rem
+    font-weight: 800
+    line-height: 25px
+    background-color: var(--blue)
+input:not(:focus):not(:placeholder-shown):invalid
+    border: 1px solid var(--red)
+input:not(:focus):not(:placeholder-shown):invalid ~ .error
+    display: block
